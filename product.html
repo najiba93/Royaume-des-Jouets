@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails du Produit - Royaume des Jouets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- En-tête avec navigation -->
+    <header>
+        <nav class="container">
+            <div class="logo">Royaume des Jouets</div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Accueil</a></li>
+                <li><a href="index.html#products">Produits</a></li>
+                <li><a href="index.html#about">À propos</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="cart-icon" onclick="toggleCart()">
+                🛒
+                <span id="cart-count" class="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section Détails du Produit -->
+    <section class="product-details">
+        <div class="container">
+            <div id="product-detail" class="product-detail">
+                <!-- Les détails du produit seront insérés ici par JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Panier -->
+    <div id="cart" class="cart">
+        <div class="cart-header">
+            <h2>Mon Panier</h2>
+            <button class="close-cart" onclick="closeCart()">×</button>
+        </div>
+        <div class="cart-content" id="cart-content"></div>
+        <div id="empty-cart" class="empty-cart">Votre panier est vide</div>
+        <div id="cart-total" class="cart-total">
+            <div id="total-price" class="total-price">Total: 0€</div>
+            <button onclick="checkout()" class="btn btn-primary">Commander</button>
+        </div>
+    </div>
+    <div id="cart-overlay" class="cart-overlay" onclick="closeCart()"></div>
+
+    <!-- Notification -->
+    <div id="notification" class="notification">Produit ajouté au panier !</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

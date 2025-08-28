@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royaume des Jouets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- En-tête avec navigation -->
+    <header>
+        <nav class="container">
+            <div class="logo">Royaume des Jouets</div>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#products">Produits</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="cart-icon" onclick="toggleCart()">
+                🛒
+                <span id="cart-count" class="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section héro (Accueil) -->
+    <section id="home" class="hero">
+        <h1>Découvrez le Royaume des Jouets</h1>
+        <p>Collection exclusive de jouets pour enfants, pour stimuler l'imagination et l'apprentissage</p>
+        <a href="#products" class="btn btn-primary">Voir la Collection</a>
+    </section>
+
+    <!-- Section Produits -->
+    <section id="products" class="products">
+        <h2 class="section-title">Nos Produits</h2>
+        <div id="products-grid" class="products-grid"></div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>À Propos du Royaume des Jouets</h2>
+                    <p class="about-description">
+                        Depuis 2020, Royaume des Jouets est votre destination privilégiée pour des jouets éducatifs et amusants. Nous sélectionnons avec passion les meilleurs jouets pour stimuler l'imagination des enfants et favoriser leur développement.
+                    </p>
+                    <div class="features">
+                        <div class="feature">
+                            <span class="feature-icon">🚚</span>
+                            <div class="feature-info">
+                                <h3>Livraison Gratuite</h3>
+                                <p>Dès 50€ d'achat partout en France</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">↩️</span>
+                            <div class="feature-info">
+                                <h3>Retours Faciles</h3>
+                                <p>30 jours pour changer d'avis</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">💎</span>
+                            <div class="feature-info">
+                                <h3>Qualité Premium</h3>
+                                <p>Sélection rigoureuse de nos produits</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🌍</span>
+                            <div class="feature-info">
+                                <h3>Éco-Responsable</h3>
+                                <p>Matériaux durables et éthiques</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">👥</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contactez-Nous</h2>
+        <div class="container contact-content">
+            <div class="contact-info">
+                <h3>Nos Coordonnées</h3>
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <div class="contact-details">
+                        <h4>Adresse</h4>
+                        <p>123 Rue des Jouets<br>75001 Paris, France</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <div class="contact-details">
+                        <h4>Téléphone</h4>
+                        <p>01 23 45 67 89</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">✉️</span>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <p>contact@royaumedesjouets.fr</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">🕒</span>
+                    <div class="contact-details">
+                        <h4>Horaires</h4>
+                        <p>Lun-Sam: 9h-19h<br>Dim: 10h-18h</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Envoyez-nous un message</h3>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <select id="subject" required>
+                            <option value="">Choisissez un sujet</option>
+                            <option>Question sur une commande</option>
+                            <option>Information produit</option>
+                            <option>Retour/Échange</option>
+                            <option>Autre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Royaume des Jouets</h3>
+                <p>Votre boutique de jouets en ligne de confiance depuis 2020.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">📷</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">📌</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#products">Produits</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Service Client</h3>
+                <ul class="footer-links">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Livraison</a></li>
+                    <li><a href="#">Retours</a></li>
+                    <li><a href="#">Guide des âges</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Restez informé de nos nouveautés et promotions</p>
+                <div class="newsletter">
+                    <input type="email" id="newsletter-email" placeholder="Votre email">
+                    <button onclick="subscribeNewsletter()" class="btn btn-primary">S'abonner</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2024 Royaume des Jouets. Tous droits réservés. | <a href="#">Conditions d'utilisation</a> | <a href="#">Politique de confidentialité</a>
+        </div>
+    </footer>
+
+    <!-- Panier -->
+    <div id="cart" class="cart">
+        <div class="cart-header">
+            <h2>Mon Panier</h2>
+            <button class="close-cart" onclick="closeCart()">×</button>
+        </div>
+        <div class="cart-content" id="cart-content"></div>
+        <div id="empty-cart" class="empty-cart">Votre panier est vide</div>
+        <div id="cart-total" class="cart-total">
+            <div id="total-price" class="total-price">Total: 0€</div>
+            <button onclick="checkout()" class="btn btn-primary">Commander</button>
+        </div>
+    </div>
+    <div id="cart-overlay" class="cart-overlay" onclick="closeCart()"></div>
+
+    <!-- Notification -->
+    <div id="notification" class="notification">Produit ajouté au panier !</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
