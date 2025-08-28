@@ -2,45 +2,66 @@
 const products = [
     {
         id: 1,
-        name: "Ours en Peluche",
+        name: "Le Trésor des Billes Magiques",
         price: 19.99,
-        description: "Ours doux et câlin pour les enfants, parfait pour les câlins et les jeux imaginatifs. Convient aux enfants dès 3 ans.",
-        imageUrl: "https://cdn.pixabay.com/photo/2016/11/29/13/20/toy-1870573_1280.jpg"
+        description: "Plongez dans un univers éclatant avec cette collection de billes en verre aux motifs variés. Chaque bille révèle un monde miniature : spirales hypnotiques, rayures vives, couleurs translucides et reflets scintillants. Un mélange captivant de rouge, bleu, jaune et orange qui évoque la magie du jeu et la beauté artisanale. Parfait pour illustrer l’univers ludique et sensoriel du Royaume des Jouets.",
+        imageUrl: "images/1.jpg"
     },
     {
         id: 2,
         name: "Ensemble Lego",
         price: 49.99,
         description: "Kit de construction créative pour stimuler l'imagination. Idéal pour les enfants de 6 à 12 ans.",
-        imageUrl: "https://cdn.pixabay.com/photo/2017/12/12/22/36/lego-3015134_1280.jpg"
+        imageUrl: "images/10.jpg"
     },
     {
         id: 3,
-        name: "Poupée",
+        name: "Les Acrobates du Ciel Urbain",
         price: 29.99,
-        description: "Poupée élégante pour jeux imaginatifs, avec vêtements amovibles. Convient aux enfants dès 4 ans.",
-        imageUrl: "https://cdn.pixabay.com/photo/2016/11/29/09/32/doll-1869383_1280.jpg"
+        description: "Suspendus au-dessus d’une métropole vertigineuse, deux peluches emblématiques — un grenouille malicieuse et une panthère rose espiègle — jouent les funambules sur une corde improbable. Le contraste entre leur posture ludique et les gratte-ciel imposants en arrière-plan crée une scène surréaliste, presque magique. Une touche d’humour et de poésie dans le tumulte de la ville, parfaite pour éveiller l’imagination des petits comme des grands.",
+        imageUrl: "images/3.jpg"
     },
     {
         id: 4,
-        name: "Voiture Miniature",
+        name: "Mini-Héros LEGO",
         price: 14.99,
-        description: "Voiture jouet rapide et fun pour des courses endiablées. Pour enfants dès 3 ans.",
-        imageUrl: "https://cdn.pixabay.com/photo/2017/01/31/22/32/car-2028028_1280.jpg"
+        description: "Une foule joyeuse de figurines LEGO envahit le cadre, chacune affichant son style unique, ses accessoires et sa personnalité. Astronautes, pirates, policiers, aventuriers et citoyens du quotidien se côtoient sur un tapis de plaques jaunes, créant une mosaïque vibrante et colorée. Cette scène célèbre la diversité, l’imagination et l’esprit communautaire du monde LEGO — un univers où chaque personnage a sa propre histoire à raconter.",
+        imageUrl: "images/4.jpg"
     },
     {
         id: 5,
-        name: "Puzzle",
+        name: "Les Compagnons du Sable",
         price: 9.99,
-        description: "Puzzle éducatif avec 100 pièces pour développer la logique. Convient aux enfants dès 5 ans.",
-        imageUrl: "https://cdn.pixabay.com/photo/2017/08/06/12/06/people-2591874_1280.jpg"
+        description: "Un joyeux assortiment de jouets de plage attend les petites mains créatives sur le sable doré. Seaux colorés, râteaux et personnages rigolos invitent à construire châteaux, creuser tunnels et inventer des mondes marins. Chaque accessoire, du bleu éclatant au rouge vif, évoque l’été, la liberté et les rires partagés au bord de l’eau. Une scène parfaite pour illustrer les plaisirs simples et magiques des journées ensoleillées..",
+        imageUrl: "images/5.jpg"
     },
     {
         id: 6,
-        name: "Jeu de Société",
-        price: 24.99,
-        description: "Jeu familial pour des heures de plaisir, parfait pour les soirées en famille. Dès 8 ans.",
-        imageUrl: "https://cdn.pixabay.com/photo/2017/12/09/21/41/game-3008794_1280.jpg"
+        name: "Les Trois Kermits de la Sagesse",
+        price: 32.99,
+        description: "Trois peluches de Kermit la grenouille incarnent avec malice le célèbre proverbe des Trois Singes Sages : ne rien entendre, ne rien voir, ne rien dire. Sur fond noir, leurs gestes expressifs — oreilles bouchées, yeux cachés, bouche couverte — prennent une allure théâtrale et ludique. Une interprétation pop et décalée d’un message universel, parfaite pour éveiller la réflexion tout en amusant petits et grands.",
+        imageUrl: "images/6.jpg"
+    },
+       {
+        id: 7,
+        name: "Les Petits Carrés en Balade",
+        price: 18.99,
+        description: "Deux figurines en bois, aux visages dessinés avec tendresse, partagent un moment suspendu sur une balançoire. L’un sourit les yeux en croix, l’autre observe avec curiosité, les sourcils levés et les yeux ronds. Sur fond noir, leurs expressions prennent vie, évoquant l’amitié, la rêverie et les instants simples qui font sourire. Une scène minimaliste mais expressive, parfaite pour stimuler l’imagination des enfants et ajouter une touche poétique à l’univers du Royaume des Jouets.",
+        imageUrl: "images/7.jpg"
+    },
+       {
+        id: 8,
+        name: "Le Gardien Préhistorique du Futur",
+        price: 35.99,
+        description: "Ce dinosaure mécanique, inspiré du célèbre stégosaure, fusionne l’ère jurassique avec la technologie futuriste. Avec ses plaques dorsales dorées, ses articulations métalliques et ses couleurs éclatantes — argent, rouge, or et noir — il incarne la puissance et l’ingéniosité. Un petit bijou de design pour les passionnés de robots, de dinosaures et d’aventures extraordinaires. Parfait pour enrichir la collection du Royaume des Jouets et stimuler l’imagination des jeunes explorateurs du temps.",
+        imageUrl: "images/8.jpg"
+    },
+       {
+        id: 9,
+        name: "Le Petit Train des Couleurs",
+        price: 40.99,
+        description: "Un train joyeux construit en briques colorées s’élance sur un tapis fleuri, transportant des blocs géants aux teintes vives : vert, jaune, violet et bleu. À bord de la locomotive bleue coiffée d’un toit rouge, un petit ours noir veille fièrement sur le voyage. Le chiffre 1 inscrit à l’avant annonce le départ d’une aventure ludique et éducative. Ce jouet stimule la créativité, la motricité et l’amour du jeu en plein air — une pépite du Royaume des Jouets pour les explorateurs en herbe.",
+        imageUrl: "images/9.jpg"
     }
 ];
 

@@ -19,6 +19,7 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: var(--dark-color);
+    background-image: url('images/11.jpg');
 }
 
 /* Header avec navigation */
@@ -40,9 +41,18 @@ nav {
 }
 
 .logo {
-    font-size: 1.8rem;
+    font-size: 1.3rem; /* Taille ajustée pour un logo texte raisonnable */
     font-weight: bold;
     color: var(--primary-color);
+    display: flex;
+    align-items: center;
+}
+
+/* Si le logo est une image */
+.logo img {
+    max-height: 150px; /* Hauteur maximale pour l'image du logo */
+    width: auto;
+    display: block;
 }
 
 .nav-links {
